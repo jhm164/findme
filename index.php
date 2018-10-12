@@ -1,13 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 	<title>Login</title>
 <meta charset="utf-8">
+<link rel="stylesheet" href="css/animate.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style type="text/css">
+  #heading {
+  animation-duration: 4.5s;
+  animation-delay: 2s;
+  animation-iteration-count: 6;
+}
+img{
+   animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: 2;
+}
+</style>
+<script type="text/javascript">
+  $(document).ready(function(){
+$('img').addClass("animated rubberBand delay2s");
+$('nav').addClass("animated flipInX delay2s");
+  });
+</script>
 </head>
+
 
 <body class="container-fluid">
 
@@ -35,10 +56,11 @@
 </nav>
 
 	</center>
+  <center><h1 style="font-family: 'Courier New';" id="heading"  class="animated bounce delay-2s">Find me</h1></center>
 <center>
   
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<div id="myCarousel" class="carousel slide " data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -48,24 +70,24 @@
     <div class="carousel-inner">
 
       <div class="item active">
-        <img src="images/first.png" alt="Los Angeles" style="width:40%;height: 340px;">
+        <img src="images/first.png" alt="Los Angeles" style="width:30%;height: 400px;">
         <div class="carousel-caption">
-          <h3>Choose carrer</h3>
-          <p>best freelance <strong>photography</strong> website</p>
+          
+          <p></p>
         </div>
       </div>
       <div class="item">
-        <img src="images/laptop2.png" alt="Chicago" style="width:40%;height: 340px;">
+        <img src="images/laptop2.png" alt="Chicago" style="width:30%;height: 400px;">
         <div class="carousel-caption">
-          <h3>Be the Bests</h3>
-          <p>showcase your work here</p>
+         
+          <p>laptop detected</p>
         </div>
       </div>
       <div class="item">
-        <img src="images/scooter.png" alt="New York" style="width:40%;height: 340px;">
+        <img src="images/scooter.png" alt="New York" style="width:30%;height: 400px;">
         <div class="carousel-caption">
           <h3></h3>
-          <p></p>
+          <p>scooter detected</p>
         </div>
       </div>
     </div>
