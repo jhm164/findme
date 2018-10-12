@@ -48,7 +48,7 @@
 </html>
 
 <?php
-$flag=false;
+
 function getRealIpAddr()
 {
     if (!empty($_SERVER['HTTP_CLIENT_IP']))   //check ip from share internet
@@ -68,27 +68,33 @@ function getRealIpAddr()
 $ip= getRealIpAddr();
 
 
-
+$flag="false";
 if (isset($ip)) {
   
  $conn= mysqli_connect("localhost","root","","findme");
 if (!$conn) {
   
 }
-
+echo "gere";
 $sql="select * from findme";
 $result=mysqli_query($conn,$sql);
 while($row=mysqli_fetch_array($result)){
+  echo "gere";
 if ($row['ip']==$ip) {
-  
+
   $sql1="update findme set count=count+1 where ip='".$ip."'";
   mysqli_query($conn,$sql1);
-  $flag=true;
+  $flag="true";
 }
-  $sql1="Insert into findme(id,ip,date,count) values(null,'"+$ip+"',now(),0)";
-  mysqli_query($conn,$sql1); 
 
 }
+if ($flag=="false") {
+  
+ $conn= mysqli_connect("localhost","root","","findme");
+$sql2 = "INSERT INTO `findme`.`findme` (`id`, `ip`, `date`, `count`) VALUES (NULL,'$ip', now(), 0)";
+    mysqli_query($conn,$sql2); 
+}
+
 
 }
 
