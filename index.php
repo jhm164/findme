@@ -25,7 +25,10 @@ img{
   $(document).ready(function(){
 $('img').addClass("animated rubberBand delay2s");
 $('nav').addClass("animated flipInX delay2s");
-  });
+
+
+
+});
 </script>
 </head>
 
@@ -45,8 +48,8 @@ $('nav').addClass("animated flipInX delay2s");
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
-               <li id="l"><a href="#">Events</a></li>
-        <li id="r" class="abt"><a href="#">About</a></li>
+               <li id="download"><a href="download.php">Download</a></li>
+        <li id="r" class="abt"><a href="">About</a></li>
         <li><a href="showimages.php?mvp=true" >most liked</a></li>
          <li><a href="#foot" class="scroll">subscribe us</a></li>
       </ul>
@@ -57,6 +60,7 @@ $('nav').addClass("animated flipInX delay2s");
 
 	</center>
   <center><h1 style="font-family: 'Courier New';" id="heading"  class="animated bounce delay-2s">Find me</h1></center>
+  <div class="div1" id="div1">ndlsandl</div>
 <center>
   
 
@@ -91,7 +95,9 @@ $('nav').addClass("animated flipInX delay2s");
         </div>
       </div>
     </div>
+
 </center>
+
 </body>
 </html>
 
