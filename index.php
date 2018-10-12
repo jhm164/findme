@@ -2,10 +2,11 @@
 <html>
 <head>
 	<title>Login</title>
-	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<link rel="stylesheet" type="text/css" href="style/style.css"/>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body class="container-fluid">
@@ -18,7 +19,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">photoOcean</a>
+      <a class="navbar-brand" href="#">Findme</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -28,22 +29,47 @@
         <li><a href="showimages.php?mvp=true" >most liked</a></li>
          <li><a href="#foot" class="scroll">subscribe us</a></li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li id="logout"><a href="#" onclick="logout()"><span class="glyphicon glyphicon-log-in" ></span> 
-          <?php if(isset($_SESSION['fname'])&&isset($_SESSION['lname'])){
-            echo '<h5 style="color:white;">'.$_SESSION['fname']."  ".$_SESSION['lname'].'</h5>';
-        }
-        ?>
-      </a></li>
-      </ul>
+     
     </div>
   </div>
 </nav>
 
-
 	</center>
+<center>
+  
 
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="images/first.png" alt="Los Angeles" style="width:40%;height: 340px;">
+        <div class="carousel-caption">
+          <h3>Choose carrer</h3>
+          <p>best freelance <strong>photography</strong> website</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/laptop2.png" alt="Chicago" style="width:40%;height: 340px;">
+        <div class="carousel-caption">
+          <h3>Be the Bests</h3>
+          <p>showcase your work here</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/scooter.png" alt="New York" style="width:40%;height: 340px;">
+        <div class="carousel-caption">
+          <h3></h3>
+          <p></p>
+        </div>
+      </div>
+    </div>
+</center>
 </body>
 </html>
 
